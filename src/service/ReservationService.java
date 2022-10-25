@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.jar.JarOutputStream;
 
-public class ReservationService {
+public class ReservationService implements IReservationService{
     private static ReservationService reservationService = null;
     private Collection<Reservation> setOfReservations = new HashSet<Reservation>();
     private Set<IRoom> setOfRooms = new HashSet<IRoom>();

@@ -142,6 +142,7 @@ public class MainMenu {
                 IRoom roomReser = reservationService.getARoom(roomNumber);
                 Reservation reservation = reservationService.reserveARoom(customer, roomReser, checkInDate, checkOutDate);
                 System.out.println(reservation);
+                reservationService.showDefault();
 
             } catch (Exception ex){
                 System.out.println(ex.getLocalizedMessage());
